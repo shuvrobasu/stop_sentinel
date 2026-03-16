@@ -27,7 +27,7 @@
 **S.T.O.P. Sentinel** is a high-performance Data Loss Prevention (DLP) agent designed to intercept sensitive information within the Windows clipboard. Utilizing a low-level C++ system hook (`promptsec_hook.dll`), it provides real-time detection and blocking of credential leaks, API keys, and custom defined patterns.
 
 ### 🚀 Key Features
-*   **Low-Level Hooking:** Utilizes native Windows API hooks for zero-latency clipboard monitoring.
+*   **Low-Level Hooking:** Utilizes native OS API hooks for zero-latency clipboard monitoring. (see the hook files under respective OS folder)
 *   **Customizable Security Policies:** Easily add or modify detection patterns via `hooks.dlp` (CSV format).
 *   **Audit Trail:** Automated logging of security events (Source App, Timestamp, Threat Level) in JSONL format for compliance.
 *   **Stealth Integration:** Resides in the System Tray with non-intrusive toast notifications upon threat detection.
