@@ -60,17 +60,38 @@ The application loads detection rules from a local CSV file. You can manage thes
     ```bash
     python main.py
     ```
-### Build Commands
+### Build Commands for the Hook file.
 
 * Windows:
 <br>gcc -shared -o promptsec_hook.dll promptsec_hook.c -luser32 -O2
 ---
 * Linux:
-<br>sudo apt install libx11-dev xclip
+<br>sudo apt install libx11-dev xclip xdotool python3-tk
 <br>gcc -shared -fPIC -o stop_sentinel_hook.so stop_sentinel_hook_linux.c -lX11 -lpthread -O2
 ---
 * macOS:
-<br>gcc -shared -fPIC -o stop_sentinel_hook.dylib stop_sentinel_hook_macos.m -framework Cocoa -lpthread -O2
+## This is a bit tricky as there are different hardware and OS out there
+### Setup Instructions
+1. **Install Xcode Command Line Tools**: `xcode-select --install`
+2. **Install Python**: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` then `brew install python@3.11 python-tk@3.11`
+3. **Install Dependencies**: `pip3 install pystray pillow`
+4. **Clone Repository**: `git clone https://github.com/shuvrobasu/stop_sentinel.git` then `cd stop_sentinel`
+5. **Compile Native Hook**: 
+   - Apple Silicon: `gcc -shared -fPIC -o stop_sentinel_hook.dylib stop_sentinel_hook_macos.m -framework Cocoa -lpthread -O2 -arch arm64`
+   - Intel Mac: `gcc -shared -fPIC -o stop_sentinel_hook.dylib stop_sentinel_hook_macos.m -framework Cocoa -lpthread -O2 -arch x86_64`
+   - Universal: `gcc -shared -fPIC -o stop_sentinel_hook.dylib stop_sentinel_hook_macos.m -framework Cocoa -lpthread -O2 -arch arm64 -arch x86_64`
+6. **Grant Permissions**: Go to **System Settings > Privacy & Security > Accessibility** and add your python interpreter (path found via `which python3`). If running from a terminal, add the terminal app to this list as well.
+7. **Run**: `python3 stop_sentinel.py`
+
+### Troubleshooting
+- **Library Error**: Run `file stop_sentinel_hook.dylib` or `otool -L stop_sentinel_hook.dylib`.
+- **Security/Quarantine Error**: `xattr -d com.apple.quarantine stop_sentinel_hook.dylib`.
+- **Clipboard Access Denied**: `tccutil reset Accessibility`, then re-add permissions.
+- **Tkinter Missing**: `brew reinstall python-tk@3.11`.
+
+### Compatibility
+Verified on macOS 12 Monterey (Intel), 13 Ventura, 14 Sonoma, and 15 Sequoia (Apple Silicon).
+
 ---
 ### 🔒 Privacy & Security
 *   **100% Local:** All scanning processes occur strictly within your machine's memory space.
