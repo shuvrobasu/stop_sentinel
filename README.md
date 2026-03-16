@@ -60,7 +60,18 @@ The application loads detection rules from a local CSV file. You can manage thes
     ```bash
     python main.py
     ```
+### Build Commands
 
+* Windows:
+<br>gcc -shared -o promptsec_hook.dll promptsec_hook.c -luser32 -O2
+---
+* Linux:
+<br>sudo apt install libx11-dev xclip
+<br>gcc -shared -fPIC -o stop_sentinel_hook.so stop_sentinel_hook_linux.c -lX11 -lpthread -O2
+---
+* macOS:
+<br>gcc -shared -fPIC -o stop_sentinel_hook.dylib stop_sentinel_hook_macos.m -framework Cocoa -lpthread -O2
+---
 ### 🔒 Privacy & Security
 *   **100% Local:** All scanning processes occur strictly within your machine's memory space.
 *   **Data Integrity:** No clipboard content is transmitted over the network.
