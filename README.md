@@ -1,4 +1,4 @@
-# <p align="center">STOP SENTINEL</p>
+# <p align="center">S.T.O.P. SENTINEL</p>
 
 <p align="center">
   <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/7c688f89-1121-40e9-bf66-eeee79949abb" />
