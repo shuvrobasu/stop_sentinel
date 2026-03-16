@@ -1,0 +1,98 @@
+{
+    "email": {
+        "enabled": true,
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "username": "",
+        "password": "",
+        "from_addr": "",
+        "to_addrs": "",
+        "use_tls": true,
+        "rate_limit_seconds": 60
+    },
+    "remote_sync": {
+        "enabled": false,
+        "url": "",
+        "interval_minutes": 60,
+        "auth_token": ""
+    },
+    "auto_update": {
+        "enabled": false,
+        "repo_url": "https://raw.githubusercontent.com/shuvrobasu/stop_sentinel/main/hooks.dlp",
+        "check_interval_hours": 24
+    },
+    "encryption": {
+        "enabled": true
+    },
+    "clipboard": {
+        "auto_expire_seconds": 30,
+        "auto_expire_enabled": true,
+        "history_enabled": true,
+        "history_max_entries": 500
+    },
+    "whitelist": {
+        "enabled": true,
+        "apps": [
+            "Visual Studio Code",
+            "PyCharm",
+            "IntelliJ",
+            "Eclipse",
+            "Notepad++"
+        ]
+    },
+    "app_rules": {
+        "Slack": {
+            "block": true,
+            "alert": true,
+            "level": "CRITICAL"
+        },
+        "Discord": {
+            "block": true,
+            "alert": true,
+            "level": "CRITICAL"
+        },
+        "Microsoft Teams": {
+            "block": true,
+            "alert": true,
+            "level": "CRITICAL"
+        },
+        "Outlook": {
+            "block": true,
+            "alert": true,
+            "level": "HIGH"
+        },
+        "Chrome": {
+            "block": true,
+            "alert": false,
+            "level": "MEDIUM"
+        },
+        "Firefox": {
+            "block": true,
+            "alert": false,
+            "level": "MEDIUM"
+        }
+    },
+    "entropy": {
+        "enabled": true,
+        "threshold": 4.5,
+        "min_length": 20
+    },
+    "siem": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 514,
+        "protocol": "UDP",
+        "facility": 1,
+        "format": "CEF"
+    },
+    "undo": {
+        "enabled": true,
+        "pin": "0000",
+        "expire_seconds": 300
+    },
+    "team_dashboard": {
+        "enabled": false,
+        "port": 8080,
+        "api_key": ""
+    }
+}
