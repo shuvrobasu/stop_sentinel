@@ -1,6 +1,6 @@
 // stop_sentinel_hook_linux.c
 // Compile: gcc -shared -fPIC -o stop_sentinel_hook.so stop_sentinel_hook_linux.c -lX11 -lpthread -O2
-
+#include <sys/time.h>
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
 #include <stdio.h>
