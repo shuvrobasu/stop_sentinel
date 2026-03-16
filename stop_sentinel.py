@@ -213,7 +213,7 @@ class DashboardServer:
                              f"<td>{e.get('score', 0)}</td></tr>")
 
                 html = f"""<!DOCTYPE html><html><head>
-<title>STOP Sentinel Dashboard</title>
+<title>S.T.O.P. Sentinel Dashboard</title>
 <meta http-equiv="refresh" content="30">
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
@@ -231,7 +231,7 @@ th{{color:#94a3b8;font-size:11px;text-transform:uppercase}}
 .badge{{padding:2px 6px;border-radius:3px;font-size:10px;font-weight:bold}}
 .badge-crit{{background:#dc2626;color:#fff}}.badge-high{{background:#ea580c;color:#fff}}
 </style></head><body>
-<div class="hdr"><h1>STOP Sentinel Dashboard</h1>
+<div class="hdr"><h1>S.T.O.P. Sentinel Dashboard</h1>
 <p>Auto-refreshes every 30 seconds</p></div>
 <div class="wrap">
 <div class="card"><div class="stats">
