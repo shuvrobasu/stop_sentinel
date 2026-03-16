@@ -71,6 +71,7 @@ The application loads detection rules from a local CSV file. You can manage thes
 - [ ] Add encrypted log storage.
 - [ ] Remote Policy Sync (Enterprise Feature).
 
+``Note: Tested on Windows 11, Main Python is cross platform, compile the hooks from your OS (Linux/MacOS) by downloading the files from the respective folder``
 ---
 
 *Built with security-first architecture for the modern developer.*
