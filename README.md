@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong><i>S</i>ensitive. <i>T</i>oken. <i>O</i>bfuscation. <i>P</i>rotection.</strong><br>
+  <strong><i>S</i>ensitive. <i>T</i>oken. <i>O</i>bfuscation. & <i>P</i>rotection.</strong><br>
   <em>Your clipboard's first line of defense.</em>
 </p>
 
