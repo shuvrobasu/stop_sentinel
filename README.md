@@ -37,7 +37,7 @@
 <img width="1394" height="746" alt="image" src="https://github.com/user-attachments/assets/20c78032-706e-4b9f-80ec-57d9b55e52b8" />
 
 ### 🛠️ Technical Stack
-*   **Core Logic:** Python 3.10+ with `ctypes` for native Windows API interaction.
+*   **Core Logic:** Python 3.10+ with `ctypes` for native OS API interaction.
 *   **Performance Engine:** Custom C++ DLL for high-speed regex/string matching.
 *   **GUI:** `Tkinter` with `ttk` styling.
 *   **System Integration:** `pystray` (System Tray) and `Pillow` (Icon generation).
