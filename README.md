@@ -30,6 +30,8 @@
 *   **Audit Trail:** Automated logging of security events (Source App, Timestamp, Threat Level) in JSONL format for compliance.
 *   **Stealth Integration:** Resides in the System Tray with non-intrusive toast notifications upon threat detection.
 *   **User-Centric UI:** Modern `Tkinter` dashboard with real-time statistics and uptime tracking.
+*   **Ready to use:** Comes bundled with ready to use 45+ commonly used templates.
+
 <img width="1394" height="746" alt="image" src="https://github.com/user-attachments/assets/20c78032-706e-4b9f-80ec-57d9b55e52b8" />
 
 ### 🛠️ Technical Stack
@@ -45,6 +47,10 @@ The application loads detection rules from a local CSV file. You can manage thes
 | :--- | :--- | :--- | :--- | :--- |
 | GitHub PAT | `ghp_` | CRITICAL | GitHub Token | true |
 | AWS Key | `AKIA` | CRITICAL | AWS Access Key | true |
+
+<img width="702" height="947" alt="image" src="https://github.com/user-attachments/assets/4f0f1a4b-d6ee-428f-aa02-11189b39fc37" /> | <img width="502" height="450" alt="image" src="https://github.com/user-attachments/assets/f855c454-3378-4e39-8b4b-7ca11dc16957" />
+
+
 
 ### ⚙️ Installation
 1.  **Clone the repository:**
@@ -103,7 +109,7 @@ Verified on macOS 12 Monterey (Intel), 13 Ventura, 14 Sonoma, and 15 Sequoia (Ap
 - [ ] Add encrypted log storage.
 - [ ] Remote Policy Sync (Enterprise Feature).
 
-``Note: Tested on Windows 11, Main Python is cross platform, compile the hooks from your OS (Linux/MacOS) by downloading the files from the respective folder``
+#### Note: Tested on Windows 11, Main Python is cross platform, compile the hooks for your OS (Linux/MacOS) by downloading the files from the respective folder and following instrunctions above to compile/build from source.
 ---
 
 *Built with security-first architecture for the modern developer.*
