@@ -74,9 +74,11 @@ The application loads detection rules from a local CSV file. You can manage thes
 | GitHub PAT | `ghp_` | CRITICAL | GitHub Token | true |
 | AWS Key | `AKIA` | CRITICAL | AWS Access Key | true |
 
-<img width="752" height="665" alt="image" src="https://github.com/user-attachments/assets/023cdc1e-f219-41ec-b8fc-bfd13fb267a3" /> <img width="752" height="787" alt="image" src="https://github.com/user-attachments/assets/e81d9073-9c32-4e7f-8c17-1c63f7acf209" />
+| | |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/023cdc1e-f219-41ec-b8fc-bfd13fb267a3" alt="image" width="720" height="720"> | <img src="https://github.com/user-attachments/assets/e81d9073-9c32-4e7f-8c17-1c63f7acf209" alt="image" width="720" height="720"> |
+| <img src="https://github.com/user-attachments/assets/f855c454-3378-4e39-8b4b-7ca11dc16957" alt="image" width="720" height="720"> | <img src="https://github.com/user-attachments/assets/8c16718e-4cf2-4549-9b74-16dda21e18da" alt="image" width="720" height="720"> |
 
-<img width="502" height="450" alt="image" src="https://github.com/user-attachments/assets/f855c454-3378-4e39-8b4b-7ca11dc16957" />
 
 
 
