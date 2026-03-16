@@ -1,0 +1,47 @@
+name,pattern,threat_level,description,enabled
+GitHub PAT,ghp_,CRITICAL,GitHub Personal Access Token,true
+GitHub OAuth,gho_,CRITICAL,GitHub OAuth Token,true
+GitHub User,ghu_,CRITICAL,GitHub User Token,true
+GitHub Server,ghs_,CRITICAL,GitHub Server Token,true
+GitHub Refresh,ghr_,CRITICAL,GitHub Refresh Token,true
+GitHub Fine-Grained,github_pat_,CRITICAL,GitHub Fine-Grained PAT,true
+AWS Access Key,AKIA,CRITICAL,AWS Access Key ID,true
+AWS Secret,aws_secret_access_key,CRITICAL,AWS Secret Key,true
+RSA Private Key,-----BEGIN RSA PRIVATE KEY-----,CRITICAL,RSA Private Key,true
+OpenSSH Key,-----BEGIN OPENSSH PRIVATE KEY-----,CRITICAL,OpenSSH Private Key,true
+EC Private Key,-----BEGIN EC PRIVATE KEY-----,CRITICAL,EC Private Key,true
+PGP Private Key,-----BEGIN PGP PRIVATE KEY BLOCK-----,CRITICAL,PGP Private Key,true
+JWT Token,eyJ,HIGH,JSON Web Token,true
+Bearer Token,Bearer,HIGH,Bearer Token,true
+Slack User Token,xoxp-,HIGH,Slack User Token,true
+Slack Bot Token,xoxb-,HIGH,Slack Bot Token,true
+Slack App Token,xoxa-,HIGH,Slack App Token,true
+Stripe Live Secret,sk_live_,CRITICAL,Stripe Live Secret Key,true
+Stripe Test Secret,sk_test_,HIGH,Stripe Test Secret Key,true
+Stripe Restricted,rk_live_,CRITICAL,Stripe Restricted Key,true
+SendGrid Key,SG.,HIGH,SendGrid API Key,true
+PostgreSQL URL,postgresql://[a-z],CRITICAL,PostgreSQL Connection String,true
+MySQL URL,mysql://[a-z],CRITICAL,MySQL Connection String,true
+MongoDB URL,mongodb://[a-z],CRITICAL,MongoDB Connection String,true
+MongoDB SRV,mongodb+srv://,CRITICAL,MongoDB SRV Connection,true
+Redis URL,redis://[a-z],CRITICAL,Redis Connection String,true
+GCP API Key,AIza,CRITICAL,Google Cloud API Key,true
+Azure Connection,DefaultEndpointsProtocol=https,CRITICAL,Azure Storage Connection,true
+Heroku API Key,heroku,HIGH,Heroku API Key,true
+NPM Token,npm_,HIGH,NPM Access Token,true
+PyPI Token,pypi-AgEIcHlwaS5vcmc,HIGH,PyPI API Token,true
+Discord Token,discord,HIGH,Discord Bot Token,true
+Twilio SID,AC[0-9],HIGH,Twilio Account SID,true
+Twilio Key,SKxxxxxxxx,HIGH,Twilio API Key (example),false
+Mailgun Key,key-,HIGH,Mailgun API Key,true
+Password Assignment,password=,HIGH,Hardcoded Password,true
+Secret Assignment,secret=,HIGH,Hardcoded Secret,true
+API Key Assignment,api_key=,HIGH,Hardcoded API Key,true
+Private Key Generic,PRIVATE KEY,CRITICAL,Generic Private Key,true
+Hugging Face,hf_,HIGH,Hugging Face Token,true
+Test Visa,4532 1234 5678 9010,CRITICAL,Test Visa card number,true
+Test Mastercard,5555 5555 5555 4444,CRITICAL,Test Mastercard number,true
+Test Amex,3782 822463 10005,CRITICAL,Test Amex card number,true
+Card Placeholder,XXXX-XXXX-XXXX-XXXX,MEDIUM,Card number placeholder,true
+Card Dots,****-****-****-****,MEDIUM,Masked card number,true
+Maestro,64XX-XXXX-XXXX-XXXX,HIGH,Maestro card,true
