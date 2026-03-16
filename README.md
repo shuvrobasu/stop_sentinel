@@ -21,24 +21,48 @@
 
 ---
 
-<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/9f223792-a69a-43b8-87d1-d59931d94bc6" />
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/eb3e0a43-012d-40c9-bd2a-c33a511d7795" />
+
 
 ### 🛡️ Overview
 **S.T.O.P. Sentinel** is a high-performance Data Loss Prevention (DLP) agent designed to intercept sensitive information within the Windows clipboard. Utilizing a low-level C++ system hook (`promptsec_hook.dll`), it provides real-time detection and blocking of credential leaks, API keys, and custom defined patterns.
 
 ### 🚀 Key Features
-*   **Low-Level Hooking:** Utilizes native OS API hooks for zero-latency clipboard monitoring. (see the hook files under respective OS folder)
-*   **Customizable Security Policies:** Easily add or modify detection patterns via `hooks.dlp` (CSV format).
-*   **Audit Trail:** Automated logging of security events (Source App, Timestamp, Threat Level) in JSONL format for compliance.
-*   **Stealth Integration:** Resides in the System Tray with non-intrusive toast notifications upon threat detection.
-*   **User-Centric UI:** Modern `Tkinter` dashboard with real-time statistics and uptime tracking.
-*   **Ready to use:** Comes bundled with ready to use 45+ commonly used templates.
+*  **Native Low-Level Clipboard Hooking:** Uses OS-specific native hook libraries for fast clipboard interception and monitoring on supported platforms.
+*  **Regex + Substring Detection Engine:** Supports both exact substring matching and regex-based detection for secrets, tokens, credentials, PII, and structured identifiers.
+*  **Customizable Security Policies:** Add, edit, delete, enable, or disable rules through hooks.dlp (CSV-based policy file).
+*  **Built-in Detection Library:** Ships with 80+ ready-to-use patterns covering API keys, cloud credentials, private keys, database URLs, PII, financial identifiers, and more.
+*  **Threat Blocking & Redaction:** Automatically replaces detected sensitive clipboard content with blocked/redacted placeholders before reuse.
+*  **Threat Scoring Engine:** Assigns severity and score to detections for better prioritization and triage.
+*  **Entropy-Based Secret Detection:** Identifies suspicious high-entropy strings that may represent unknown or custom secrets.
+*  **Luhn Validation:** Detects and validates payment card numbers using checksum validation to reduce false positives.
+*  **Application Whitelisting:** Allows selected applications to bypass scanning rules where needed.
+*  **Application-Specific Policies:** Supports different actions and alert levels depending on the source or target application.
+*  **Clipboard Auto-Expire:** Optionally clears sensitive clipboard content automatically after a configured time window.
+*  **Undo Support:** Provides protected recovery of recently redacted clipboard entries.
+*  **Clipboard History:** Maintains an encrypted clipboard event/history store for inspection and review.
+*  **Encrypted Log Storage:** Audit and event logs can be encrypted at rest for stronger privacy and compliance.
+*  **Audit Trail:** Automatically logs source app, timestamp, threat, action taken, and score in JSONL format for compliance and forensics.
+*  **Exportable Logs:** Security events can be exported for reporting and compliance workflows.
+*  **Remote Policy Sync:** Supports centralized rule synchronization from a remote source for managed deployments.
+*  **Pattern Auto-Update:** Can pull updated detection templates automatically from a configured repository/source.
+*  **Email Alerts:** Sends alert notifications to users/admins when threats are detected.
+*  **SIEM Integration:** Supports forwarding events to external SIEM/syslog-style pipelines for centralized monitoring.
+*  **Embedded Dashboard Server:** Includes a lightweight built-in web dashboard server for viewing logged activity.
+*  **Pattern Testing Sandbox:** Lets users test text against configured rules without affecting the live clipboard.
+*  **Collapsible Pattern Categories:** Security rules are grouped in expandable/collapsible sections for easier management.
+*  **User-Centric GUI:** Modern Tkinter-based desktop interface with real-time status, threat counters, and session uptime.
+*  **System Tray Integration:** Runs quietly in the tray with toast notifications and quick access controls.
+*  **Cross-Platform Design:** Structured for Windows, Linux, and macOS with platform-specific hook implementations.
+*  **Ready to Use:** Comes preloaded with a broad set of practical detection templates so it works out of the box.
+
+---
 
 <img width="1394" height="746" alt="image" src="https://github.com/user-attachments/assets/20c78032-706e-4b9f-80ec-57d9b55e52b8" />
 
 ### 🛠️ Technical Stack
 *   **Core Logic:** Python 3.10+ with `ctypes` for native OS API interaction.
-*   **Performance Engine:** Custom C++ DLL for high-speed regex/string matching.
+*   **Performance Engine:** Custom C DLL for high-speed regex/string matching.
 *   **GUI:** `Tkinter` with `ttk` styling.
 *   **System Integration:** `pystray` (System Tray) and `Pillow` (Icon generation).
 
@@ -50,7 +74,9 @@ The application loads detection rules from a local CSV file. You can manage thes
 | GitHub PAT | `ghp_` | CRITICAL | GitHub Token | true |
 | AWS Key | `AKIA` | CRITICAL | AWS Access Key | true |
 
-<img width="702" height="947" alt="image" src="https://github.com/user-attachments/assets/4f0f1a4b-d6ee-428f-aa02-11189b39fc37" /> | <img width="502" height="450" alt="image" src="https://github.com/user-attachments/assets/f855c454-3378-4e39-8b4b-7ca11dc16957" />
+<img width="752" height="665" alt="image" src="https://github.com/user-attachments/assets/023cdc1e-f219-41ec-b8fc-bfd13fb267a3" /> <img width="752" height="787" alt="image" src="https://github.com/user-attachments/assets/e81d9073-9c32-4e7f-8c17-1c63f7acf209" />
+
+<img width="502" height="450" alt="image" src="https://github.com/user-attachments/assets/f855c454-3378-4e39-8b4b-7ca11dc16957" />
 
 
 
