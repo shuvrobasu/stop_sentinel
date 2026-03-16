@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>Sensitive Token Obfuscation Protection</strong><br>
+  <strong><i>S</i>ensitive. <i>T</i>oken. <i>O</i>bfuscation. <i>P</i>rotection.</strong><br>
   <em>Your clipboard's first line of defense.</em>
 </p>
 
@@ -19,6 +19,7 @@
 
 ---
 
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/9f223792-a69a-43b8-87d1-d59931d94bc6" />
 
 ### 🛡️ Overview
 **S.T.O.P. Sentinel** is a high-performance Data Loss Prevention (DLP) agent designed to intercept sensitive information within the Windows clipboard. Utilizing a low-level C++ system hook (`promptsec_hook.dll`), it provides real-time detection and blocking of credential leaks, API keys, and custom defined patterns.
@@ -29,6 +30,7 @@
 *   **Audit Trail:** Automated logging of security events (Source App, Timestamp, Threat Level) in JSONL format for compliance.
 *   **Stealth Integration:** Resides in the System Tray with non-intrusive toast notifications upon threat detection.
 *   **User-Centric UI:** Modern `Tkinter` dashboard with real-time statistics and uptime tracking.
+<img width="1394" height="746" alt="image" src="https://github.com/user-attachments/assets/20c78032-706e-4b9f-80ec-57d9b55e52b8" />
 
 ### 🛠️ Technical Stack
 *   **Core Logic:** Python 3.10+ with `ctypes` for native Windows API interaction.
