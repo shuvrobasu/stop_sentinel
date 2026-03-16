@@ -14,6 +14,8 @@
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status">
   <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
   <img src="https://img.shields.io/badge/Platform-Windows-lightgrey" alt="Platform">
+<img src="https://img.shields.io/badge/Linux-Supported-lightgrey?logo=linux&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/macOS-Supported-lightgrey?logo=apple&logoColor=black" alt="macOS">
   <img src="https://img.shields.io/badge/Privacy-100%25_Offline-success" alt="Privacy">
 </p>
 
