@@ -135,10 +135,10 @@ Verified on macOS 12 Monterey (Intel), 13 Ventura, 14 Sonoma, and 15 Sequoia (Ap
 *   **Minimalist Design:** Low CPU and memory footprint for background operation.
 
 ### 📈 Roadmap
-- [ ] Implement Regex-based detection patterns.
-- [ ] Add encrypted log storage.
-- [ ] Remote Policy Sync (Enterprise Feature).
-- [ ] Email alerts to user/admin 
+- [ ] Enterprise Deployment (as a background service)
+- [ ] Admin functionality to stop/block certain functions
+- [ ] Improve GUI
+- [ ] Local AI integration
 
 #### Note: Tested on Windows 11, Main Python is cross platform, compile the hooks for your OS (Linux/MacOS) by downloading the files from the respective folder and following instrunctions above to compile/build from source.
 ---
